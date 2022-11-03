@@ -7,16 +7,15 @@
 <body>
 
 <script>
-
- var myName = "Wes";
- var yourName = prompt("Hello, my name is " + myName + ". What's your name?");
- var upperCase = yourName.slice(0,1);
- upperCase = upperCase.toUpperCase();
- var restOfName = yourName.slice(1,yourName.length);
- restOfName = restOfName.toLowerCase()
- var capitalizedName = upperCase + restOfName;
- alert("Hi " + capitalizedName + ".");
- alert("I hope you have a good day, " + capitalizedName + " ,and where ever you are in life, remember, its all about perspective." );
+var yourName = prompt("Hi I'm Wes. I'll be converting your dog's age to human years. What is your name?");
+var upperCase = yourName.slice(0,1);
+upperCase = upperCase.toUpperCase();
+var restOfName = yourName.slice(1,yourName.length);
+restOfName = restOfName.toLowerCase();
+var capitalizedName = upperCase + restOfName;
+var dogAge = prompt("Hi " + capitalizedName + ". How old is your dog?");
+var humanAge = (dogAge - 2) * 4 + 21;
+alert("Ok " + capitalizedName + ", your dog is " + humanAge + " years old in human years!");
 </script>
  </body>
 
